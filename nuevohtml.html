@@ -5,17 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
-<style>
-    titulo-de-formulario{
-        color: red;
-        font-size: 20px;
-        background-color: black
-    }
-    h1 {
-        color: red;
-    }
-</style>
+
 </head>
 <body>
     <!--este es un encabezado-->
@@ -42,7 +34,7 @@
             <titulo-de-formulario>Datos personales</titulo-de-formulario>
         
         </legend>
-        <!-- comienza el formulario -->
+        <!-- comienza el formulario de datos personales -->
             <label for="nombres">Nombre y Apellido</label>
                 <input id="nombres" type="text" placeholder="nombres y apellidos"> <br>
             <label for="Fecha">Fecha de nacimiento</label>
@@ -61,22 +53,71 @@
             <label for="AB">AB</label>    
                 <input id="AB" type="radio" value name="tipo-de-sangre"> <br>
         <!--fin de tipos de sangre  -->
-    </div>
-    <span>
+    
+  
         <p>RH de sangre</p>
+    
         <select name="rh-de-sangre" id="rh-de-sangre" >
-                <option value="" disabled>seleccione se RH</option>
+                <option value="" disabled>seleccione su RH</option>
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="0">0</option> 
+            </div>        
         </select> <br>
-    </span>
+    
         <label for="mail">Email</label>
             <input id="mail" type="email" name="email" id="" placeholder="email"> <br>
         <label for="dni">Documento</label>    <
             <input id="dni" type="number" placeholder="DNI"> <br>
         <label for="tarjeta">Tarjeta de Credito</label>    
             <input id="tarjeta" type="number" name="" id="" placeholder="Nro. de tarjeta de credito"> <br>
+    </fieldset>
+        <!--termina el formulario de datos personales-->
+        <!-- comienza el formulario de residencia -->
+    <fieldset>
+        <div>
+        <legend>
+            <titulo-de-formulario-2>Datos de residencia</titulo-de-formulario-2>
+        </legend>
+        <!-- pais -->
+        <form action="">
+            <p>País de residencia</p>
+            <select name="País" id="pais">
+                <option id="paises" value="" disabled >Seleccione pais donde reside</option>
+                <option id="paises" value="argentina" >argentina</option>
+                <option id="paises" value="venezuela" >venezuela</option>
+                <option id="paises" value="colombia">colombia</option>
+                <option id="paises" value="uruguay">uruguay</option>
+            </select>
+        <!-- ciudad -->
+        <p>Ciudad</p>
+        <select name="ciudad" id="ciudad">
+            <option value="" disabled >Seleccione la ciudad donde reside</option>
+            <option value="Buenos aires" >Buenos Aires</option>
+            <option value="C.A.B.A" >C.A.B.A.</option>
+            <option value="cordoba">cordoba</option>
+            <option value="Mendoza">Mendoza</option>
+        </select> <br>
+    </div>
+        <!-- calle o avenida -->
+        <label for="calle">calle</label>
+            <input type="radio" id="calle"  name="calleavenida">
+        <label for="avenida">avenida</label>
+            <input type="radio" id="avenida" name="calleavenida">
+        <label for="nombre">nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre de la calle o avenida"> <br>
+        <!-- numero de casa -->
+        <label for="numero">N°</label>
+            <input type="number" id="numero"> 
+        <!-- color de la casa -->
+        
+            <label for="color">Color</label>
+                <input type="color"  id="color"> <br>
+        <!-- subimos una foto de la casa -->
+            <label for="fotocasa">Subir una foto de tu casa</label>
+                <input type="file" name="foto de tu casa">
+       <!-- termina el formulario de residencia -->
+        </form>
     </fieldset>
 </form>   
 <!-- fin de contenido -->
